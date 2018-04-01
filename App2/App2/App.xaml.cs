@@ -22,9 +22,9 @@ namespace App2
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-            AppCenter.Start("ios=d0af9a4b-6edc-4e45-bfa6-477ddd0cc08f;" +
+            AppCenter.Start("ios=f2de57a8-2878-438c-bfe5-3341f1ffd455;" +
                   //"uwp={Your UWP App secret here};" +
-                  "android=e56b418b-8094-4959-a134-c8b9a9835637",
+                  "android=b390cdc5-15f2-4ed4-bb70-eae2ce579d09",
                   typeof(Analytics), typeof(Crashes));
 
         }
