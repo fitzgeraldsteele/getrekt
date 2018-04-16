@@ -38,6 +38,7 @@ namespace App2
                 //player.Load(audioStream);
 
                 player.Play();
+				Analytics.TrackEvent("getRekt_Played");
             }
             catch (Exception exception)
             {
@@ -66,6 +67,7 @@ namespace App2
                 //player.Load(audioStream);
 
                 player.Play();
+				Analytics.TrackEvent("rektRainbow_Played");
             }
             catch (Exception exception)
             {
