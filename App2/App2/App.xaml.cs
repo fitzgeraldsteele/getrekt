@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 using Xamarin.Forms;
 
@@ -25,7 +26,8 @@ namespace App2
             AppCenter.Start("ios=f2de57a8-2878-438c-bfe5-3341f1ffd455;" +
                   //"uwp={Your UWP App secret here};" +
                   "android=b390cdc5-15f2-4ed4-bb70-eae2ce579d09",
-                  typeof(Analytics), typeof(Crashes));
+                  typeof(Analytics), typeof(Crashes), typeof(Distribute));
+
 
         }
 

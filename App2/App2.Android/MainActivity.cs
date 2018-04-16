@@ -8,6 +8,9 @@ using Android.Widget;
 using Android.OS;
 using App2;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Distribute;
+
 namespace GetRekt.Droid
 {
     [Activity(Label = "GetRekt", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -22,6 +25,7 @@ namespace GetRekt.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
         }
     }
 }

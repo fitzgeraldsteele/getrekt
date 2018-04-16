@@ -5,6 +5,9 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Distribute;
+
 namespace App2.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -23,8 +26,9 @@ namespace App2.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+			Distribute.DontCheckForUpdatesInDebug();
             LoadApplication(new App());
-
+        
             return base.FinishedLaunching(app, options);
         }
     }

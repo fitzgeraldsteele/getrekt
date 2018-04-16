@@ -1,16 +1,29 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:App2"
-             x:Class="App2.MainPage">
-    <StackLayout Orientation="Vertical">
-    <Label Text="Get Rekt!!!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
-    <Image Source="get_rekt_nerd.png" />
-        <Button x:Name="mainBtn"
-                    Text="Get Rekt!!!"
-                    Clicked="MainBtn_OnClicked" />
-    </StackLayout>
-</ContentPage>
+<?xml version="1.0" encoding="utf-8"?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App2" x:Class="App2.MainPage">
+    <ContentPage>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Get Rekt!!!" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Image Source="get_rekt_nerd.png" />
+            <BoxView WidthRequest="200" HeightRequest="200" Color="Silver" >
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="MainBtn_OnClicked">
+                    </TapGestureRecognizer>
+                </BoxView.GestureRecognizers> 
+              
+            </BoxView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Rekt Rainbow!!!" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Image Source="rektrainbow.jpg" />
+            <BoxView WidthRequest="200" HeightRequest="200" Color="Silver" >
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="MainBtn2_OnClicked">
+                    </TapGestureRecognizer>
+                </BoxView.GestureRecognizers> 
+              
+            </BoxView>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>
