@@ -16,7 +16,7 @@
     <ContentPage>
         <StackLayout Orientation="Vertical">
             <Label Text="Rekt Rainbow!!!" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Image Source="rektrainbow.jpg" />
+            <Image Source="rektrainbow.png" />
             <BoxView WidthRequest="200" HeightRequest="200" Color="Silver" >
                 <BoxView.GestureRecognizers>
                     <TapGestureRecognizer Tapped="MainBtn2_OnClicked">

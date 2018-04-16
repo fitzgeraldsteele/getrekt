@@ -111,7 +111,6 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\rektrainbow.jpg" />
     <BundleResource Include="Resources\rektrainbow.mp3" />
     <BundleResource Include="Resources\getRekt.mp3" />
   </ItemGroup>
@@ -160,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\instantrapairhorn.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\rektrainbow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\App2\App2.projitems" Label="Shared" />
